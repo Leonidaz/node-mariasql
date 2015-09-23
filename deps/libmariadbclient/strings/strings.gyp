@@ -4,7 +4,7 @@
       'target_name': 'strings',
       'type': 'static_library',
       'standalone_static_library': 1,
-      'includes': [ '../config/config.gypi' ],
+      'includes': [ '../config/libmariadbclient.gypi' ],
       'defines': [
         'DISABLE_MYSQL_THREAD_H',
       ],

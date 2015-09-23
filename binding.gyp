@@ -17,7 +17,7 @@
             ],
         }],
       ],
-      'includes': [ 'deps/libmariadbclient/config/config.gypi' ],
+      'includes': [ 'deps/libmariadbclient/config/libmariadbclient.gypi' ],
       'dependencies': [
         'deps/libmariadbclient/libmysql/clientlib.gyp:clientlib',
       ],

@@ -4,7 +4,7 @@
       'target_name': 'clientlib',
       'type': 'static_library',
       'standalone_static_library': 1,
-      'includes': [ '../config/config.gypi' ],
+      'includes': [ '../config/libmariadbclient.gypi' ],
       'sources': [
         '../sql-common/client.c',
         '../sql-common/client_plugin.c',

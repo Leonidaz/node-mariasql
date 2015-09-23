@@ -4,7 +4,7 @@
       'target_name': 'yassl',
       'type': 'static_library',
       'standalone_static_library': 1,
-      'includes': [ '../../config/config.gypi' ],
+      'includes': [ '../../config/libmariadbclient.gypi' ],
       'sources': [
         'src/buffer.cpp',
         'src/cert_wrapper.cpp',
@@ -19,12 +19,16 @@
         'src/yassl_imp.cpp',
         'src/yassl_int.cpp',
       ],
+      # Prevents node's openssl headers from getting in the way
+      'include_dirs!': [ '<(node_root_dir)/include/node' ],      
       'include_dirs': [
         '.',
         'include',
         'taocrypt/include',
         'taocrypt/mySTL',
+        '../../include',
       ],
+      'include_dirs+': [ '<(node_root_dir)/include/node' ],
     },
   ],
 }

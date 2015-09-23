@@ -4,7 +4,7 @@
       'target_name': 'taocrypt',
       'type': 'static_library',
       'standalone_static_library': 1,
-      'includes': [ '../../../config/config.gypi' ],
+      'includes': [ '../../../config/libmariadbclient.gypi' ],
       'sources': [
         'src/aes.cpp',
         'src/aestables.cpp',
